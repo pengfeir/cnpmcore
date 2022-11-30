@@ -6,7 +6,7 @@ import { patchAjv } from '../app/port/typebox';
 
 export default (appInfo: EggAppConfig) => {
   const config = {} as PowerPartial<EggAppConfig>;
-
+  config.keys = '123456';
   config.cnpmcore = {
     name: 'cnpm',
     hooksLimit: 20,
